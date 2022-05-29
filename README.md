@@ -7,7 +7,7 @@ These notes are distilled from a few real life experiences of conducing event st
 
 Other than the main canvas, the following helps with the over all flow by reducing distractions:
 - The definitions for a quick reference, 
-- The library of building blocks (stickies for events, roles, aggregates etc) where the pariticipants can copy from and drag and 
+- The library of building blocks (stickies for events, roles, aggregates etc) where the participants can copy from and drag and 
 - The list of steps that indicates the progress
 
 ![miro template with guides](https://github.com/spraja08/event-storming/blob/main/images/1-prepare-a.png)
@@ -23,13 +23,13 @@ Other than the main canvas, the following helps with the over all flow by reduci
 
 - Choose a moderator (business expert or the product manager) to sort the Domain Events chronologically, filtering the duplicates out.
 - Cover the happy flows. Abstract the exception flows in a subprocess to be expanded later.
-- Review the Domain Events for the consistent usage of the vocabulary (ubiquitous language) and resolve the variatiosn with the help of the business expert
+- Review the Domain Events for the consistent usage of the vocabulary (ubiquitous language) and resolve the variations with the help of the business expert
 
 ![events filtered](https://github.com/spraja08/event-storming/blob/main/images/2-events.png)
 
 ## 3. Commands & Actors
 
-- From a readability perspective, map the Actors and Commands abvoe the events. (by now, the events are connected in a flow)
+- From a readability perspective, map the Actors and Commands above the events. (by now, the events are connected in a flow)
 
 ![commands mapped](https://github.com/spraja08/event-storming/blob/main/images/3-commands.png)
 
@@ -44,7 +44,7 @@ Other than the main canvas, the following helps with the over all flow by reduci
 ## 5. Aggregates
 
 - Here is where the business participants might hit a cognitive overload. Pre-warn them that they can take it easy here.
-- One interepretation that works for the technical pariticpants is this:
+- One interpretation that works for the technical participants is this:
   -  Every Domain event represents a state change in the system.
   -  An Aggregate holds such state changes (using multiple related highly-cohesive entities)
   -  Some interpretations mention that Aggregates also are responsible for the execution of policies (business logic)
@@ -54,7 +54,7 @@ Other than the main canvas, the following helps with the over all flow by reduci
 
 ## 6. Bounded Contexts
 
-- From the left, start grouping "cohesive" domain events into a single bounded context using the hueristics below: 
+- From the left, start grouping "cohesive" domain events into a single bounded context using the heuristics below: 
   -  Same set of aggregates are being used
   -  These aggregates have consistent meaning for the respective Actors (complying to the ubiquitous language). Beware of the Aggregates that have the same names but different meanings (polysemes)
   -  The Actors involved do not have to "switch contexts" as they perform their works (they have a single context)
