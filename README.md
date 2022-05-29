@@ -5,7 +5,7 @@ These notes are distilled from a few real life experiences of conducing event st
 
 ## 1. Prepare the Templates upfront
 
-Other the main canvas, the following helps with the over all flow by reducing distractions:
+Other than the main canvas, the following helps with the over all flow by reducing distractions:
 - The definitions for a quick reference, 
 - The library of building blocks (stickies for events, roles, aggregates etc) where the pariticipants can copy from and drag and 
 - The list of steps that indicates the progress
