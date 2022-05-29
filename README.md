@@ -5,4 +5,4 @@ These notes are distilled from a few real life experiences of conducing event st
 
 # 1. Prepare the Templates upfront
 
-![enter image description here](http://www.google.com)
+![enter image description here](https://github.com/spraja08/event-storming/blob/main/1-prepare.png)
