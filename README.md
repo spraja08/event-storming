@@ -6,8 +6,8 @@ These notes are distilled from a few real life experiences of conducing event st
 ## 1. Prepare the Templates upfront
 
 Other the main canvas, the following helps with the over all flow by reducing distractions:
--the definitions for a quick reference, 
--the library of building blocks (stickies for events, roles, aggregates etc) where the pariticipants can copy from and drag and 
--the list of steps that indicates the progress
- 
+- the definitions for a quick reference, 
+- the library of building blocks (stickies for events, roles, aggregates etc) where the pariticipants can copy from and drag and 
+- the list of steps that indicates the progress
+
 ![miro template with guides](https://github.com/spraja08/event-storming/blob/main/1-prepare-a.png)
