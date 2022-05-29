@@ -10,7 +10,7 @@ Other the main canvas, the following helps with the over all flow by reducing di
 - the library of building blocks (stickies for events, roles, aggregates etc) where the pariticipants can copy from and drag and 
 - the list of steps that indicates the progress
 
-![miro template with guides](https://github.com/spraja08/event-storming/blob/main/1-prepare-a.png)
+![miro template with guides](https://github.com/spraja08/event-storming/blob/main/images/1-prepare-a.png)
 
 ## 2. Domain Events
 
@@ -21,4 +21,4 @@ Other the main canvas, the following helps with the over all flow by reducing di
 - Choose a moderator (business expert or the product manager) to sort the domain events chronologically, filtering the duplicates out.
 - Review the domain events for the consistent usage of the vocabulary (ubiquitous language) and resolve the variatiosn with the help of the business expert
 
-![events filtered](https://github.com/spraja08/event-storming/blob/main/2-events.png)
+![events filtered](https://github.com/spraja08/event-storming/blob/main/images/2-events.png)
