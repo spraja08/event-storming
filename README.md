@@ -31,4 +31,4 @@ Other the main canvas, the following helps with the over all flow by reducing di
 
 - From a readability perspective, map the roles and commands abvoe the events. (by now, the events are connected in a flow)
 
-![events filtered](https://github.com/spraja08/event-storming/blob/main/images/3-commands.png)
+<center>![events filtered](https://github.com/spraja08/event-storming/blob/main/images/3-commands.png)</center>
