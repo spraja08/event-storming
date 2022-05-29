@@ -1,6 +1,6 @@
 # Event Storming : Do's & Don'ts
 
-These notes are distilled from a few real life experiences of conducing event storming remotely, using Miro.  (Yes, face-to-face is ideal but not practical always...) Any suggestions on improving the techniques as well as the interpretations of **DDD** as documented here are most welcome. (DDD itself can be learned from Eric Evans blue book or Vaugn Vernon's red or green books)
+These notes are distilled from a few real life experiences of conducing event storming remotely, using Miro.  (Yes, face-to-face is ideal but not practical always...) Any suggestions on improving the techniques as well as the interpretations of **DDD** as documented here are most welcome. (DDD itself can be learned from Eric Evans' blue book and Vaugn Vernon's red or green books)
 
 
 ## 1. Prepare the Templates upfront
@@ -57,10 +57,12 @@ Other the main canvas, the following helps with the over all flow by reducing di
 - From the left, start grouping "cohesive" domain events into a single bounded context using the hueristics below: 
   -  Same set of aggregates are being used
   -  These aggregates have consistent meaning for the respective Actors (complying to the ubiquitous language). Beware of the Aggregates that have the same names but different meanings (polysemes)
-  -  The Actors involved do not have to "switch contexts" (they have a single context)
+  -  The Actors involved do not have to "switch contexts" as they perform their works (they have a single context)
   -  Every subsequent Domain Event is an incremental step change and not jumping into a completely different outcome
   -  Usually, crossing the organizational unit (Line of Business) represents the boundary of a bounded context. But beware of the consequences as stated by Conway's Law.
-  -  Watch out for the supporting functions(Payments, Implementing KYC etc). If these are used by multiple processes in the organization, these can also be grouped into Supporting Bounded Contexts.
+  -  Watch out for the supporting functions(Payments, Performing Know-Your-Customer(KYC) etc). If these are used by multiple processes in the organization, these can also be grouped into Supporting Bounded Contexts.
   
-
 ![bounded contexts](https://github.com/spraja08/event-storming/blob/main/images/6-bounded.png)
+
+- Finally, you may apply the golden principles -" high cohesion and loose coupling" to judge and adjust (Would this lead to an *independently deployable* chunk)
+
