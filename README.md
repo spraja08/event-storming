@@ -6,9 +6,9 @@ These notes are distilled from a few real life experiences of conducing event st
 ## 1. Prepare the Templates upfront
 
 Other the main canvas, the following helps with the over all flow by reducing distractions:
-- the definitions for a quick reference, 
-- the library of building blocks (stickies for events, roles, aggregates etc) where the pariticipants can copy from and drag and 
-- the list of steps that indicates the progress
+- The definitions for a quick reference, 
+- The library of building blocks (stickies for events, roles, aggregates etc) where the pariticipants can copy from and drag and 
+- The list of steps that indicates the progress
 
 ![miro template with guides](https://github.com/spraja08/event-storming/blob/main/images/1-prepare-a.png)
 
@@ -31,7 +31,7 @@ Other the main canvas, the following helps with the over all flow by reducing di
 
 - From a readability perspective, map the Roles and Commands abvoe the events. (by now, the events are connected in a flow)
 
-![events filtered](https://github.com/spraja08/event-storming/blob/main/images/3-commands.png)
+![commands mapped](https://github.com/spraja08/event-storming/blob/main/images/3-commands.png)
 
 ## 4. Read Models, Policies & External Systems
 
@@ -39,6 +39,15 @@ Other the main canvas, the following helps with the over all flow by reducing di
 - Read Model basically is the "information" that the user needs before issuing the Command to the system. Again, high level and not the db design or Data Transfer Objects design.
 - Map out the External Systems that are used for that Domain Event to happen
 
-![events filtered](https://github.com/spraja08/event-storming/blob/main/images/4-policy.png)
+![policies and ext systems](https://github.com/spraja08/event-storming/blob/main/images/4-policy.png)
 
-## 5. Read Models, Policies & External Systems
+## 5. Aggregates
+
+- Here is where the business participants will hit a cognitive overload. Pre-warn them that they can take it easy here.
+- One interepretation that works for the technical pariticpants is this:
+  -  Every Domain event represents a state change in the system.
+  -  An Aggregate holds such state changes (using multiple related highly-cohesive entities)
+  -  Some interpretations mention that Aggregates also are responsible for the execution of policies (business logic)
+- Again, capture enough to represent the system behaviour (not an ER-model)
+
+![policies and ext systems](https://github.com/spraja08/event-storming/blob/main/images/5-aggregates.png)
