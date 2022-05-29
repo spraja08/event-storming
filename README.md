@@ -5,4 +5,4 @@ These notes are distilled from a few real life experiences of conducing event st
 
 ## 1. Prepare the Templates upfront
 
-![miro template with guides](https://github.com/spraja08/event-storming/blob/main/1-prepare.png)
+![miro template with guides](https://github.com/spraja08/event-storming/blob/main/1-prepare-a.png)
