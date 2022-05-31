@@ -1,7 +1,6 @@
 # Event Storming : Do's & Don'ts
 
-These notes are distilled from a few real life experiences of conducing event storming remotely, using Miro.  (Yes, face-to-face is ideal but not practical always...) Any suggestions on improving the techniques as well as the interpretations of **DDD** as documented here are most welcome. (DDD itself can be learned from Eric Evans' blue book and Vaugn Vernon's red or green books)
-
+These notes are distilled from a few real life experiences of conducing event storming remotely, using Miro.  (Yes, face-to-face is ideal but not practical always...) Any suggestions on improving the techniques as well as the interpretations of **DDD** as documented here are most welcome. (DDD itself can be learned from Eric Evans' blue book and Vaugn Vernon's red or green books). The scope is not to explain event storming or DDD but to provide guidance on making some key decisions while running the workshop itself. And the Audience for this are the moderators of event storming workshops
 
 ## 1. Prepare the Templates upfront
 
@@ -38,16 +37,19 @@ Other than the main canvas, the following helps with the over all flow by reduci
 - Sweep from left to right and attach the policies to the Domain Events (wherever some rules needed to be evaluated before the Domain Event could occur)
 - Read Model basically is the "information" that the user needs for deliberation before issuing the Command to the system. Again, high level and not the db design or Data Transfer Objects design.
 - Map out the External Systems that are used for that Domain Event to happen
-
+- The policies need to be expanded in detail. They might become a subprocess that may also involve external systems. This would lead to modelling extra Domain Events and Read Models.
+  
 ![policies and ext systems](https://github.com/spraja08/event-storming/blob/main/images/4-policy.png)
 
 ## 5. Aggregates
 
 - Here is where the business participants might hit a cognitive overload. Pre-warn them that they can take it easy here.
-- One interpretation that works for the technical participants is this:
+- An interpretation that works for the technical participants is this:
   -  Every Domain event represents a state change in the system.
-  -  An Aggregate holds such state changes (using multiple related highly-cohesive entities)
+  -  An Aggregate holds such state and maintain the changes (using multiple related highly-cohesive entities)
   -  Some interpretations mention that Aggregates also are responsible for the execution of policies (business logic)
+
+- It is good to look across the subsequent events in the chain (most likely they are changing the states of same aggregates) so that the Aggregates won’t be too fine grained in the start itself.
 - Again, capture enough to represent the system behaviour (not an ER-model)
 
 ![aggregates](https://github.com/spraja08/event-storming/blob/main/images/5-aggregates.png)
