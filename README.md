@@ -50,7 +50,7 @@ Other than the main canvas, the following helps with the over all flow by reduci
   -  Some interpretations mention that Aggregates also are responsible for the execution of policies (business logic)
 
 - It is good to look across the subsequent events in the chain (most likely they are changing the states of same aggregates) so that the Aggregates won’t be too fine grained in the start itself.
-- Again, capture enough to represent the system behaviour (not an ER-model)
+- Again, capture enough to represent the system behaviour (not to be tempted to do a detailed ER-model)
 
 ![aggregates](https://github.com/spraja08/event-storming/blob/main/images/5-aggregates.png)
 
