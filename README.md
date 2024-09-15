@@ -68,3 +68,40 @@ Other than the main canvas, the following helps with the over all flow by reduci
 
 - Finally, you may apply the golden principles -" high cohesion and loose coupling" to judge and adjust (Would this lead to an *independently deployable* chunk)
 
+Sure, here's the text converted into Markdown format:
+
+## 7. What Can Go Wrong and the Fixes
+
+### a. Lack of clear business context and domain knowledge:
+- **Issue:** Participants may not have a deep understanding of the business domain and processes, leading to incomplete or inaccurate event identification.
+- **Fix:** Ensure you have the right mix of business experts and domain knowledge owners participating in the event storming session. Spend time upfront to establish the business context and boundaries.
+
+### b. Overwhelming number of events:
+- **Issue:** Participants may generate too many events, leading to cognitive overload and difficulty in organizing and making sense of the flow.
+- **Fix:** Encourage participants to focus on the most critical and high-level business events first. Periodically review and group related events to keep the model manageable.
+
+### c. Difficulty in establishing the proper sequence of events:
+- **Issue:** Participants may struggle to correctly order the events in the right chronological sequence.
+- **Fix:** Provide a clear visual timeline or swimlane to help participants place the events in the right order. Leverage the business domain experts to guide the sequencing.
+
+### d. Lack of consistent language and terminology:
+- **Issue:** Participants may use different terms or vocabularies to describe the same concepts, leading to confusion and ambiguity.
+- **Fix:** Encourage the use of a ubiquitous language and facilitate a discussion to align on the right terms and definitions. Maintain a glossary of agreed-upon terms.
+
+### e. Difficulty in identifying the right level of abstraction:
+- **Issue:** Participants may struggle to strike the right balance between high-level, abstract events and overly detailed, technical events.
+- **Fix:** Guide the participants to focus on the essential business events and avoid getting caught up in the technical implementation details. Revisit the level of abstraction periodically.
+
+### f. Lack of engagement and participation:
+- **Issue:** Some participants may be more passive or reluctant to contribute, leading to a skewed or incomplete model.
+- **Fix:** Foster an inclusive environment, encourage active participation, and ensure that all voices are heard. Break the group into smaller teams if necessary to increase engagement.
+
+### g. Difficulty in identifying boundaries and bounded contexts:
+- **Issue:** Participants may have trouble drawing the boundaries between different bounded contexts or identifying the appropriate aggregates.
+- **Fix:** Provide guidance on the principles of bounded context and aggregates, and facilitate discussions to help participants recognize the natural boundaries within the domain.
+
+### h. Inability to manage exceptions and alternative flows:
+- **Issue:** The event storming exercise may focus primarily on the "happy path" scenarios, neglecting the exceptional or alternative flows.
+- **Fix:** Encourage participants to consider and capture the exceptional scenarios and alternative flows, either as separate subprocesses or as variations within the main flow.
+
+Event Storming exercise is an iterative process, and it's common to encounter some of these challenges. The key is to remain flexible, leverage the domain expertise of the participants, and continuously refine the model as the understanding of the domain evolves.
